@@ -1,0 +1,16 @@
+{
+  "name": "capsula_do_tempo",
+  "description": "Eventos históricos ocorridos no Brasil",
+  "main": "main.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/amaral220x/capsula_do_tempo.git"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^2.0.7",
+    "electron-packager": "^12.1.0"
+  }
+}

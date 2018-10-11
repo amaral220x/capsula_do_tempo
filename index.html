@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cápsula do Tempo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script>
+        window.$ = window.jQuery = require('./jquery/jquery-3.3.1.min.js');
+    </script>
+</head>
+<body onload="foca()">
+    <script>
+        function foca(){
+            $('#busca').focus();
+        }
+    </script>
+    <script src="js/busca.js"></script>
+    <div id="busca-div" style="position: fixed; top: 0px;">
+        <input type="text" id="busca">
+        <button id="btn-buscar">Buscar</button>
+    </div>
+    </nav>
+    <div id="saida"></div>
+</body>
+</html>
