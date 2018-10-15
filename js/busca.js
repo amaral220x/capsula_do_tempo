@@ -1,9 +1,11 @@
 let queryUrl = "https://pt.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=";
 
+
+
 $(function() {
 
     $(document).keypress(function(e) {
-        if(e.which == 13) 
+        if(e.which == 13)
             $('#btn-buscar').click();
     });
 
@@ -20,21 +22,18 @@ $(function() {
 
         function pegarResultado(dado){
             console.log(dado);
-            
+
             let page = dado.query.pages;
             let pageId = Object.keys(dado.query.pages)[0];
             let content = page[pageId].extract;
-            
+
             if(content != null){
                 console.log(content);
-                content = content.replace('<span id="Referências">Referências</span>', '');
                 $('#saida').empty();
                 $('#saida').prepend("<div>");
                 $('#saida').prepend(content);
                 $('#saida').prepend("<br></div>");
                 $('#saida').css('display', 'block');
-                console.log(content);
-                
             } else {
                 $.ajax({
                     url: queryUrl + busca,
@@ -42,7 +41,7 @@ $(function() {
                     dataType: 'json',
                     success: segundaChance
                 });
-            }   
+            }
         }
 
         function segundaChance(dado){
@@ -63,10 +62,11 @@ $(function() {
                 }
 
             } else {
-                $('#saida').empty();                    
+                $('#saida').empty();
                 $('#saida').prepend("Nada a mostrar");
                 $('#saida').css('display', 'block');
             }
         }
+
     });
 });

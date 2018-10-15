@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Cápsula do Tempo</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:300,400,500,700|Roboto:400,500,300,700|Montserrat:300,400,500,700,600|Roboto+Mono|Roboto+Slab:300,400,700|Source+Serif+Pro:400,700' rel='stylesheet'>
     <script>
         window.$ = window.jQuery = require('./jquery/jquery-3.3.1.min.js');
+
     </script>
 </head>
 <body onload="foca()">
@@ -17,9 +19,16 @@
     <script src="js/busca.js"></script>
     <div id="busca-div" style="position: fixed; top: 0px;">
         <input type="text" id="busca">
-        <button id="btn-buscar">Buscar</button>
+        <button id="btn-buscar">&#128269;</button>
     </div>
-    </nav>
+    <div id="nav">
+      <ul>
+        <li><a href="https://github.com/amaral220x/capsula_do_tempo">Nosso Git</a></li>
+        <li><a href="https://electronjs.org/"> Electron</a></li>
+        <li><a href="/home/amaral/Downloads/capsula_do_tempo/sobre.html">Sobre</a></li>
+        <li><a href="/home/amaral/Downloads/capsula_do_tempo/somos.html">Quem somos</a></li>
+      </ul>
+    </div>
     <div id="saida"></div>
 </body>
 </html>
