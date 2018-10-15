@@ -27,11 +27,14 @@ $(function() {
             
             if(content != null){
                 console.log(content);
+                content = content.replace('<span id="Referências">Referências</span>', '');
                 $('#saida').empty();
                 $('#saida').prepend("<div>");
                 $('#saida').prepend(content);
                 $('#saida').prepend("<br></div>");
                 $('#saida').css('display', 'block');
+                console.log(content);
+                
             } else {
                 $.ajax({
                     url: queryUrl + busca,
