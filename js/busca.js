@@ -29,6 +29,12 @@ $(function() {
 
             if(content != null){
                  console.log(content);
+                 if(content.includes('<h2><span id="Nascimentos">Nascimentos</span></h2>\n<h')){
+                    content = content.replace('<h2><span id="Nascimentos">Nascimentos</span></h2>', '');
+                 }
+                 if(content.includes('<h2><span id="Falecimentos">Falecimentos</span></h2>\n<h')){
+                    content = content.replace('<h2><span id="Falecimentos">Falecimentos</span></h2>', '');
+                 }
                  content = content.replace('<span id="Referências">Referências</span>', '');
                  $('#saida').empty();
                  $('#saida').prepend("<div>");
