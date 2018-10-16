@@ -3,8 +3,8 @@
   "description": "Eventos históricos ocorridos no Brasil",
   "main": "main.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/amaral220x/capsula_do_tempo.git"
+    "type": "git",
+    "url": "https://github.com/amaral220x/capsula_do_tempo.git"
   },
   "scripts": {
     "start": "electron ."
