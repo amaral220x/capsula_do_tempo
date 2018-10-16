@@ -72,11 +72,13 @@ body {
   padding: 10px;
 }
 #nav_pags{
-  background-color: inherit;
+  background-color: #f9e934;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 0px;
   float: left;
-  border-radius: 5px
+  border-radius: 5px;
+  position: fixed;
+  top: 0px;
 }
 #nav_pags ul{
     margin: 0;
@@ -89,4 +91,28 @@ body {
 }
 #nav_pags ul li a{
   padding: 10px;
+}
+#sobre{
+  background-color: #88c4ee;
+  margin-top: 35px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  font-size: 20px;
+}
+#nav ul li a:hover{
+  text-decoration: underline;
+	color: #228B22;
+}
+#nav ul li a{
+  text-decoration: none;
+
+}
+#nav_pags ul li a:hover{
+  text-decoration: underline;
+	color: #228B22;
+}
+#nav_pags ul li a{
+  text-decoration: none;
+
 }
