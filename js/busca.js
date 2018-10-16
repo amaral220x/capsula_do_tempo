@@ -12,13 +12,19 @@ $(function() {
     $('#btn-buscar').on('click', () => {
         $('#btn-buscar').focus();
         var busca = $('#busca').val();
-        var url = queryUrl + busca + "_no_Brasil";
-        $.ajax({
-            url: url,
-            type: 'GET',
-            dataType: 'json',
-            success: pegarResultado
-        });
+        if(parseInt(busca)){
+          var url = queryUrl + busca + "_no_Brasil";
+          $.ajax({
+              url: url,
+              type: 'GET',
+              dataType: 'json',
+              success: pegarResultado
+          });
+        } else {
+          $('#saida').empty();
+          $('#saida').prepend("<div>Digite um ano, por favor!<br></div>");
+          $('#saida').css('display', 'block');
+        }
 
         function pegarResultado(dado){
             console.log(dado);
