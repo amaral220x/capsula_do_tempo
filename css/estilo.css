@@ -8,7 +8,7 @@ body {
 #busca {
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  border-bottom: 6px solid #35533e;
+  border-bottom: 3px solid #35533e;
   text-align: center;
   color: #383838;
   font-size: 15pt;
@@ -23,6 +23,7 @@ body {
   background-color: rgba(0, 0, 0, 0);
   padding: 5px;
   border: 1px solid #303030;
+  border-radius: 40px 40px 40px 40px;
   color: #303030;
   font-size: 14pt;
 }
