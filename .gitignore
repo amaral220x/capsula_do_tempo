@@ -1,2 +1,12 @@
 # pasta do node
 node_modules
+
+# releases
+
+release-builds
+
+# others
+
+package-lock.json
+
+npm-debug.log
