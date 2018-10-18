@@ -1,0 +1,11 @@
+{
+    "dest": "release-builds/",
+    "icon": "imagens/brasil.png",
+    "categories": [
+      "Education"
+    ],
+    "lintianOverrides": [
+      "changelog-file-missing-in-native-package"
+    ]
+  }
+
