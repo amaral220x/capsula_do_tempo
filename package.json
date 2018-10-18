@@ -1,16 +1,32 @@
 {
-  "name": "capsula_do_tempo",
+  "name": "capsula-do-tempo",
   "description": "Eventos históricos ocorridos no Brasil",
+  "version": "0.0.1",
+  "author": {
+    "name": "Francisco Rubens",
+    "email": "chicokarkow@hotmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Gabriel Vieira"
+    },
+    {
+      "name": "Wesley Ferreira"
+    }
+  ],
   "main": "main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/amaral220x/capsula_do_tempo.git"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "package-win": "electron-packager . capsula-do-tempo --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds",    
+    "package-linux": "electron-packager . capsula-do-tempo --overwrite --platform=linux --arch=x64 --icon=imagens/brasil.png --prune=true --out=release-builds"
   },
   "devDependencies": {
-    "electron": "^2.0.7",
-    "electron-packager": "^12.1.0"
+    "electron": "^2.0.11",
+    "electron-packager": "^12.2.0"
   }
 }
